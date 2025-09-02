@@ -7,19 +7,19 @@ const DEFAULT_FONTS: Font[] = [
   {
     id: "noto-sans-kr",
     name: "Noto Sans KR",
-    url: "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap",
+    url: "http://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap",
     isCustom: false,
   },
   {
     id: "nanum-gothic",
     name: "Nanum Gothic",
-    url: "https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap",
+    url: "http://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap",
     isCustom: false,
   },
   {
     id: "nanum-myeongjo",
     name: "Nanum Myeongjo",
-    url: "https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap",
+    url: "http://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap",
     isCustom: false,
   },
 ];
