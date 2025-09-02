@@ -124,12 +124,12 @@ export default function Index() {
           </div>
           
           <div className="md:col-span-1 flex flex-col items-center justify-start p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-            {/* 캔버스 너비를 절반으로 수정 (w-1/2) */}
+            {/* 캔버스 너비를 30%로 수정 (w-[30%]) */}
             <LyricsCanvas 
               lyricsData={lyricsData}
               settings={canvasSettings}
               mode={layoutMode}
-              className="w-1/2"
+              className="w-[30%]"
             />
           </div>
         </div>
