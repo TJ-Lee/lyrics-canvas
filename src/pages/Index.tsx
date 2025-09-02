@@ -98,9 +98,7 @@ export default function Index() {
       </header>
 
       <main className="container mx-auto px-4 py-6">
-        {/* 화면 분할을 1:1 비율 (md:grid-cols-2)로 수정 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* 왼쪽 사이드바 */}
           <div className="md:col-span-1 space-y-6">
             <Tabs defaultValue="input">
               <TabsList className="grid grid-cols-2 w-full">
@@ -125,13 +123,13 @@ export default function Index() {
             <ExportPanel lyricsData={lyricsData} />
           </div>
           
-          {/* 오른쪽 - 캔버스 미리보기 */}
           <div className="md:col-span-1 flex flex-col items-center justify-start p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+            {/* 캔버스 너비를 절반으로 수정 (w-1/2) */}
             <LyricsCanvas 
               lyricsData={lyricsData}
               settings={canvasSettings}
               mode={layoutMode}
-              className="w-full"
+              className="w-1/2"
             />
           </div>
         </div>
