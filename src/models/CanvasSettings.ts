@@ -28,7 +28,7 @@ export class CanvasSettings {
     // Handle font size splitting with backward compatibility
     const defaultContentSize = 32;
     this.contentFontSize = settings.contentFontSize || settings.fontSize || defaultContentSize;
-    this.titleFontSize = settings.titleFontSize || settings.fontSize * 1.5 || defaultContentSize * 1.5;
+    this.titleFontSize = settings.titleFontSize || (settings.fontSize ? settings.fontSize * 1.5 : defaultContentSize * 1.5);
     
     this.lineSpacing = settings.lineSpacing || 1.6;
     this.titleAlignment = settings.titleAlignment || TextAlignment.CENTER;
